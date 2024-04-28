@@ -1,0 +1,21 @@
+[debug] [2024-04-28T20:32:25.514Z] ----------------------------------------------------------------------
+[debug] [2024-04-28T20:32:25.516Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kosta\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-04-28T20:32:25.517Z] CLI Version:   13.7.5
+[debug] [2024-04-28T20:32:25.517Z] Platform:      win32
+[debug] [2024-04-28T20:32:25.517Z] Node Version:  v20.10.0
+[debug] [2024-04-28T20:32:25.517Z] Time:          Sun Apr 28 2024 23:32:25 GMT+0300 (Israel Daylight Time)
+[debug] [2024-04-28T20:32:25.517Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-28T20:32:25.523Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-28T20:32:25.523Z] > authorizing via signed-in user (kosnobiz@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\kosta\Documents\DEV\Projects\portfolio
+
