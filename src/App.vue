@@ -1,6 +1,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <h1>This is so fun!!</h1>
+  <p>okay now something updated but it looks behind?</p>
   <HelloWorld msg="Welcome to Your Vue.js App" />
 </template>
 
