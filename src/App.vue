@@ -1,18 +1,14 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <h1>This is so fun!!</h1>
-  <p>okay now something updated but it looks behind?</p>
-  <small>hmm.. this may work..? should work!</small>
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <AppHeader />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AppHeader from './components/AppHeader.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    AppHeader,
   }
 }
 </script>
