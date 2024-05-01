@@ -1,6 +1,6 @@
 <template>
 
-    <div class="app-header">
+    <header class="app-header">
         <p>kNoCoding</p>
 
         <ul>
@@ -10,7 +10,7 @@
             <li>Resume</li>
             <li>Contact</li>
         </ul>
-    </div>
+    </header>
 
 </template>
 
