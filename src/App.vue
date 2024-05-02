@@ -2,6 +2,7 @@
   <AppHeader />
   <main>
     <HeroSection />
+    <AboutSection />
   </main>
   <AppFooter />
 </template>
@@ -10,6 +11,7 @@
 import AppHeader from './components/AppHeader.vue'
 import AppFooter from './components/AppFooter.vue'
 import HeroSection from './components/HeroSection.vue'
+import AboutSection from './components/AboutSection.vue';
 
 export default {
   name: 'App',
@@ -17,6 +19,7 @@ export default {
     AppHeader,
     AppFooter,
     HeroSection,
+    AboutSection
   }
 }
 </script>
