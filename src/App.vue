@@ -4,6 +4,7 @@
     <HeroSection />
     <AboutSection />
     <ResumeSection />
+    <ContactSection />
   </main>
   <AppFooter />
 </template>
@@ -14,6 +15,7 @@ import AppFooter from './components/AppFooter.vue'
 import HeroSection from './components/HeroSection.vue'
 import AboutSection from './components/AboutSection.vue'
 import ResumeSection from './components/ResumeSection.vue'
+import ContactSection from './components/ContactSection.vue'
 
 export default {
   name: 'App',
@@ -22,7 +24,8 @@ export default {
     AppFooter,
     HeroSection,
     AboutSection,
-    ResumeSection
+    ResumeSection,
+    ContactSection
   }
 }
 </script>
