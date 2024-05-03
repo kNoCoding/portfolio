@@ -71,4 +71,13 @@
 
 </script>
 
-<style scoped></style>
+<style scoped>
+.resume-section {
+    margin-block-end: 0.67em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+</style>
