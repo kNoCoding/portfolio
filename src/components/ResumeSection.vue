@@ -1,8 +1,9 @@
 <template>
     <div class="resume-section">
-        <h2>Resume Highlights</h2>
-        <div class="education-and-training">
 
+        <h2>Resume Highlights</h2>
+
+        <div class="education-and-training">
             <h3>Education and Training</h3>
             <ul>
                 <li>
@@ -16,7 +17,9 @@
                         Elementor, and WooCommerce.</p>
                 </li>
             </ul>
+        </div>
 
+        <div class="professional-experience">
             <h3>Professional Experience</h3>
             <ul>
                 <li>
@@ -41,7 +44,9 @@
                         interactions and resolving technical issues.</p>
                 </li>
             </ul>
+        </div>
 
+        <div class="skills">
             <h3>Skills</h3>
             <ul>
                 <li>
@@ -57,8 +62,8 @@
                     <p>Fluent in Hebrew, Russian, and English.</p>
                 </li>
             </ul>
-            <button>Download Full Resume</button>
         </div>
+        <button>Download Full Resume</button>
     </div>
 </template>
 
