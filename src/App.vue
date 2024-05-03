@@ -3,6 +3,7 @@
   <main>
     <HeroSection />
     <AboutSection />
+    <ResumeSection />
   </main>
   <AppFooter />
 </template>
@@ -11,7 +12,8 @@
 import AppHeader from './components/AppHeader.vue'
 import AppFooter from './components/AppFooter.vue'
 import HeroSection from './components/HeroSection.vue'
-import AboutSection from './components/AboutSection.vue';
+import AboutSection from './components/AboutSection.vue'
+import ResumeSection from './components/ResumeSection.vue'
 
 export default {
   name: 'App',
@@ -19,7 +21,8 @@ export default {
     AppHeader,
     AppFooter,
     HeroSection,
-    AboutSection
+    AboutSection,
+    ResumeSection
   }
 }
 </script>
@@ -31,6 +34,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
