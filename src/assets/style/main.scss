@@ -1,0 +1,10 @@
+// SASS - SETUP
+@import 'setup/variables'; // Import variables first so they can be used everywhere
+@import 'setup/mixins'; // Import mixins to use the functions everywhere
+@import 'setup/functions'; // Functions can also be used in other files
+@import 'setup/helpers'; // Helper classes and functions
+@import 'setup/typography'; // Typography settings for consistency
+
+// BASE
+@import 'base/base'; // Global base styles that don't require mixins or variables
+@import 'base/layout'; // Global layout styles that may use mixins/variables

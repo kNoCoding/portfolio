@@ -1,0 +1,154 @@
+// Global reset
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: $font-size-base;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.5;
+    font-family: sans-serif;
+    font-weight: $font-weight-normal;
+    color: $color-neutral-700;
+    background-color: $color-background;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+// Typography defaults
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: $font-weight-bold;
+    color: $color-neutral-700;
+}
+
+// Remove list styles and use role for better accessibility
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+// Links
+a {
+    text-decoration: none;
+    color: $color-primary;
+
+    &:hover,
+    &:focus {
+        color: darken($color-primary, 10%);
+        text-decoration: underline;
+    }
+
+    &:active {
+        color: lighten($color-primary, 10%);
+    }
+}
+
+// Images and videos are responsive by default
+img,
+svg,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+// Global styles for form elements
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+    padding: $spacing-unit;
+    border: 1px solid $color-neutral-200;
+    border-radius: 4px;
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 1px $color-accent;
+    }
+
+    &.error {
+        border-color: $color-danger;
+    }
+}
+
+// Button specific styling
+button,
+[type='button'],
+[type='reset'],
+[type='submit'],
+a.button {
+    background-color: $color-primary;
+    color: $color-neutral-100;
+    border: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: darken($color-primary, 10%);
+    }
+}
+
+// Table elements
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    text-align: left;
+    padding: $spacing-unit;
+}
+
+// Responsive iframes, embeds, and objects
+iframe,
+embed,
+object {
+    max-width: 100%;
+}
+
+// Accessibility focused styles
+[hidden] {
+    display: none !important;
+}
+
+// Focus styles for interactive elements
+:focus {
+    outline: 2px dashed $color-info;
+    outline-offset: 2px;
+}
+
+// Status colors for form validation feedback
+input.is-valid,
+textarea.is-valid {
+    border-color: $color-success;
+}
+
+input.is-invalid,
+textarea.is-invalid {
+    border-color: $color-danger;
+
+    &:focus {
+        outline: 2px solid $color-danger;
+    }
+}
+
+// Placeholder style
+::placeholder {
+    color: $color-neutral-300;
+    opacity: 1;
+}
