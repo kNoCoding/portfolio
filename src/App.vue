@@ -3,6 +3,7 @@
   <main>
     <HeroSection />
     <AboutSection />
+    <ProjectsSection />
     <ResumeSection />
     <ContactSection />
   </main>
@@ -16,6 +17,7 @@ import HeroSection from './components/HeroSection.vue'
 import AboutSection from './components/AboutSection.vue'
 import ResumeSection from './components/ResumeSection.vue'
 import ContactSection from './components/ContactSection.vue'
+import ProjectsSection from './components/ProjectsSection.vue'
 
 export default {
   name: 'App',
@@ -24,6 +26,7 @@ export default {
     AppFooter,
     HeroSection,
     AboutSection,
+    ProjectsSection,
     ResumeSection,
     ContactSection
   }
