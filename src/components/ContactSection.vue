@@ -1,5 +1,5 @@
 <template>
-    <div class="contact-section">
+    <div class="contact-section" id="contact">
         <h2>Contact</h2>
         <p>Let's Connect! Whether you're seeking a dynamic collaboration, need a tailored tech solution, or just want to
             say hello, I'm here to listen and respond. Use the form below to drop me a message, or connect with me

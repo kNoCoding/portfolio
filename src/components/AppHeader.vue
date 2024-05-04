@@ -4,11 +4,11 @@
         <p>kNoCoding</p>
 
         <ul>
-            <li>Hero</li>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Resume</li>
-            <li>Contact</li>
+            <li><a href="#hero">Hero</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </header>
 
@@ -42,5 +42,4 @@ ul {
 li {
     cursor: pointer;
 }
-
 </style>

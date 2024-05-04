@@ -1,5 +1,5 @@
 <template>
-    <div class="hero-section">
+    <div class="hero-section" id="hero">
         <h1>Konstantin Nochevny</h1>
         <h2>From Web Exploration to Tech Solutions</h2>
         <p>Exploring the web since 2004 and evolving into a tech innovator. I blend full-stack development with digital

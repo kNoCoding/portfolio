@@ -1,5 +1,5 @@
 <template>
-    <div class="project-section">
+    <div class="project-section" id="projects">
         <h2>My Projects</h2>
         <ul class="projects-list">
             <li class="project-item" v-for="project in projects" :key="project.id">

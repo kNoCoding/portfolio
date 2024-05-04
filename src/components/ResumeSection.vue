@@ -1,5 +1,5 @@
 <template>
-    <div class="resume-section">
+    <div class="resume-section" id="resume">
 
         <h2>Resume Highlights</h2>
 
