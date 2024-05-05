@@ -33,8 +33,13 @@
     background-color: #d3dcff;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 p {
     font-size: 1.5rem;
+    font-weight: bold;
     cursor: pointer;
 }
 
