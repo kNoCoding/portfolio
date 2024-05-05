@@ -1,7 +1,9 @@
 <template>
 
     <header class="app-header">
-        <p>kNoCoding</p>
+        <a href="/">
+            <p>kNoCoding</p>
+        </a>
 
         <ul>
             <li><a href="#hero">Hero</a></li>
