@@ -20,6 +20,10 @@
 
 <style scoped>
 .app-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
     display: flex;
     justify-content: space-around;
     padding: 16px;
