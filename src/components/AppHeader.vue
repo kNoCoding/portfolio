@@ -1,7 +1,7 @@
 <template>
 
     <header class="app-header">
-        <a href="/">
+        <a href="#top">
             <p>kNoCoding</p>
         </a>
 
