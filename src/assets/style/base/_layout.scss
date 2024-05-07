@@ -1,60 +1,32 @@
-// Container: Centers content and sets max-width
+// Main Layout Structure
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+// Internal Container to Control Content Width
 .container {
   width: 100%;
   max-width: $container-width;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: calc($gutter-width / 2);
-  padding-left: calc($gutter-width / 2);
+  padding: 0 calc($gutter-width / 2);
+  align-self: center;
 
   @include tablet {
-    padding-right: $gutter-width;
-    padding-left: $gutter-width;
+    padding: 0 $gutter-width;
   }
 }
 
-.main-layout {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas:
-    "header-area"
-    "body-area"
-    "footer-area";
-
-  height: 100dvh;
-  overflow: hidden;
-}
-
-header {
-  grid-area: header-area;
-}
-
-main {
-  grid-area: body-area;
-  overflow-y: auto;
-  max-height: max-content;
-
-  scrollbar-width: none;
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
-}
-
-footer {
-  grid-area: footer-area;
-}
-
+// Responsive settings
 @include mobile {
   .main-layout {
-
     padding: calc($spacing-unit / 2);
   }
 }
 
 @include tablet {
   .main-layout {
-    padding: $spacing-unit
+    padding: $spacing-unit;
   }
 }
 
@@ -62,11 +34,4 @@ footer {
   .main-layout {
     padding: calc($spacing-unit * 1.5);
   }
-}
-
-
-.header,
-.footer {
-  padding: $spacing-unit;
-  text-align: center;
 }

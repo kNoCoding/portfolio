@@ -7,11 +7,13 @@
     box-sizing: border-box;
 }
 
+// Basic HTML Settings
 html {
     font-size: $font-size-base;
     scroll-behavior: smooth;
 }
 
+// Body Styling
 body {
     line-height: 1.5;
     font-family: sans-serif;
@@ -24,51 +26,40 @@ body {
 }
 
 // Typography defaults
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: $font-weight-bold;
     color: $color-neutral-700;
 }
 
-// Remove list styles and use role for better accessibility
+// List styles for better accessibility
 ul[role='list'],
 ol[role='list'] {
     list-style: none;
 }
 
-// Links
+// Link Styling
 a {
     text-decoration: none;
-    color: $color-primary;
+    color: $color-accent; // Orange accent for links
 
-    &:hover,
-    &:focus {
-        color: darken($color-primary, 10%);
+    &:hover, &:focus {
+        color: darken($color-accent, 20%);
         text-decoration: underline;
     }
 
     &:active {
-        color: lighten($color-primary, 10%);
+        color: lighten($color-accent, 10%);
     }
 }
 
-// Images and videos are responsive by default
-img,
-svg,
-video {
+// Responsive Media Elements
+img, svg, video {
     max-width: 100%;
-    height: auto;
+    height: 100%;
 }
 
-// Global styles for form elements
-input,
-button,
-textarea,
-select {
+// Form Element Styling
+input, button, textarea, select {
     font: inherit;
     color: inherit;
     padding: $spacing-unit;
@@ -77,7 +68,7 @@ select {
 
     &:focus {
         outline: none;
-        box-shadow: 0 0 0 1px $color-accent;
+        box-shadow: 0 0 0 1px $color-accent; // Orange accent on focus
     }
 
     &.error {
@@ -85,54 +76,52 @@ select {
     }
 }
 
-// Button specific styling
+// Button Styling
 button,
 [type='button'],
 [type='reset'],
 [type='submit'],
 a.button {
-    background-color: $color-primary;
+    background-color: $color-accent; // Orange background for buttons
     color: $color-neutral-100;
     border: none;
     cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
 
-    &:hover,
-    &:focus {
-        background-color: darken($color-primary, 10%);
+    &:hover, &:focus {
+        background-color: darken($color-accent, 10%);
     }
 }
 
-// Table elements
+// Table Styling
 table {
     width: 100%;
     border-collapse: collapse;
 }
 
-th,
-td {
+th, td {
     text-align: left;
     padding: $spacing-unit;
 }
 
-// Responsive iframes, embeds, and objects
-iframe,
-embed,
-object {
+// Responsive Embeds
+iframe, embed, object {
     max-width: 100%;
 }
 
-// Accessibility focused styles
+// Accessibility Improvements
 [hidden] {
     display: none !important;
 }
 
-// Focus styles for interactive elements
+// Focus Styles
 :focus {
     outline: 2px dashed $color-info;
     outline-offset: 2px;
 }
 
-// Status colors for form validation feedback
+// Validation Colors
 input.is-valid,
 textarea.is-valid {
     border-color: $color-success;
@@ -147,7 +136,7 @@ textarea.is-invalid {
     }
 }
 
-// Placeholder style
+// Placeholder Styling
 ::placeholder {
     color: $color-neutral-300;
     opacity: 1;
