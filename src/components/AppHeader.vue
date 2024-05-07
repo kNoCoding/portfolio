@@ -27,7 +27,7 @@
     z-index: 1000;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 16px;
 
     background-color: #d3dcff;
