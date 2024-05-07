@@ -22,11 +22,14 @@
     align-items: center;
 }
 
-.left{
+.left {
     align-self: center;
 }
 
-img{
+img {
     background-color: lightgreen;
+    border: 5px solid #f28f3b;
+    border-radius: 50%;
+
 }
 </style>
