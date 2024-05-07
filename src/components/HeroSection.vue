@@ -19,7 +19,7 @@
 
 <style scoped>
 .hero-section {
-    margin-block-end: 0.67em;
+    align-items: center;
 }
 
 .left{

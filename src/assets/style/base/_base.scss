@@ -55,7 +55,7 @@ a {
 // Responsive Media Elements
 img, svg, video {
     max-width: 100%;
-    height: 100%;
+    height: max-content;
 }
 
 // Form Element Styling
