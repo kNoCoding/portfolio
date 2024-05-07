@@ -1,6 +1,6 @@
 <template>
   <AppHeader />
-  <main>
+  <main class="container">
     <HeroSection />
     <AboutSection />
     <ProjectsSection />
@@ -33,5 +33,6 @@ export default {
 }
 </script>
 
+<style></style>
 <style>
 </style>
