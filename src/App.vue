@@ -1,4 +1,5 @@
 <template>
+  <div class="main-layout">
   <AppHeader />
   <main class="container">
     <HeroSection />
@@ -8,6 +9,7 @@
     <ContactSection />
   </main>
   <AppFooter />
+</div>
 </template>
 
 <script>
