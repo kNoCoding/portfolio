@@ -12,11 +12,6 @@
   padding: 0 calc($gutter-width / 2);
   align-self: center;
 
-  > *{
-    height:100vh;
-    align-content: center;
-  }
-
   @include tablet {
     padding: 0 $gutter-width;
   }
