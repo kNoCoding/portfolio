@@ -17,9 +17,17 @@
 
 </script>
 
-<style scoped>
+<style lang="scss">
 .hero-section {
     align-items: center;
+
+    @include mobile {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        padding: 40px 0 0 0;
+        gap: 20px;
+
+    }
 }
 
 .left {
