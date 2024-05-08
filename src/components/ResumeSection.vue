@@ -76,20 +76,25 @@
 
 </script>
 
-<style scoped>
+<style lang="scss">
 .resume-section {
     justify-content: center;
-    
+
     flex-direction: column;
     text-align: center;
+
+    .info-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: calc($spacing-unit*2);
+
+        .professional-experience {
+            grid-row: 1 / 3;
+            grid-column: 2 / 3;
+        }
+    }
 }
 
-.info-container {
-    display: grid;
-    grid-auto-flow: column;
-
-    margin: 32px 0;
-}
 
 ul {
     list-style-type: none;
