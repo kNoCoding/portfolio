@@ -19,25 +19,48 @@
 
 <style lang="scss">
 .hero-section {
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
 
     @include mobile {
         flex-direction: column-reverse;
-        justify-content: flex-end;
-        padding: 40px 0 0 0;
-        gap: 20px;
-
+        padding: 1rem 0;
+        gap: 1rem;
     }
-}
 
-.left {
-    align-self: center;
-}
+    .left {
+        max-width: 600px;
 
-img {
-    background-color: lightgreen;
-    border: 5px solid #f28f3b;
-    border-radius: 50%;
+        h1 {
+            font-size: $font-size-h1;
+            color: $color-primary;
+            margin-bottom: 1rem;
+        }
 
+        h2 {
+            font-size: $font-size-h3;
+            color: $color-secondary;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: $font-size-base;
+            color: $color-text;
+            margin-bottom: 1.5rem;
+        }
+
+        button {
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            font-size: $font-size-base;
+        }
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: 50%;
+    }
 }
 </style>

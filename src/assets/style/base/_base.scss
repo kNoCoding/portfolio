@@ -1,4 +1,3 @@
-// Global reset
 *,
 *::before,
 *::after {
@@ -7,68 +6,61 @@
     box-sizing: border-box;
 }
 
-// Basic HTML Settings
 html {
     font-size: $font-size-base;
     scroll-behavior: smooth;
 }
 
-// Body Styling
 body {
     line-height: 1.5;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-weight: $font-weight-normal;
-    color: $color-neutral-700;
+    color: $color-text;
     background-color: $color-background;
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
 
-// Typography defaults
 h1, h2, h3, h4, h5, h6 {
     font-weight: $font-weight-bold;
-    color: $color-neutral-700;
+    color: $color-text;
 }
 
-// List styles for better accessibility
 ul[role='list'],
 ol[role='list'] {
     list-style: none;
 }
 
-// Link Styling
 a {
     text-decoration: none;
-    color: $color-accent; // Orange accent for links
+    color: $color-primary;
 
     &:hover, &:focus {
-        color: darken($color-accent, 20%);
+        color: darken($color-primary, 20%);
         text-decoration: underline;
     }
 
     &:active {
-        color: lighten($color-accent, 10%);
+        color: lighten($color-primary, 10%);
     }
 }
 
-// Responsive Media Elements
 img, svg, video {
     max-width: 100%;
-    height: max-content;
+    height: auto;
 }
 
-// Form Element Styling
 input, button, textarea, select {
     font: inherit;
     color: inherit;
     padding: $spacing-unit;
-    border: 1px solid $color-neutral-200;
+    border: 1px solid $color-neutral-300;
     border-radius: 4px;
 
     &:focus {
         outline: none;
-        box-shadow: 0 0 0 1px $color-accent; // Orange accent on focus
+        box-shadow: 0 0 0 1px $color-primary;
     }
 
     &.error {
@@ -76,13 +68,12 @@ input, button, textarea, select {
     }
 }
 
-// Button Styling
 button,
 [type='button'],
 [type='reset'],
 [type='submit'],
 a.button {
-    background-color: $color-accent; // Orange background for buttons
+    background-color: $color-primary;
     color: $color-neutral-100;
     border: none;
     cursor: pointer;
@@ -90,11 +81,10 @@ a.button {
     border-radius: 5px;
 
     &:hover, &:focus {
-        background-color: darken($color-accent, 10%);
+        background-color: darken($color-primary, 10%);
     }
 }
 
-// Table Styling
 table {
     width: 100%;
     border-collapse: collapse;
@@ -105,39 +95,10 @@ th, td {
     padding: $spacing-unit;
 }
 
-// Responsive Embeds
 iframe, embed, object {
     max-width: 100%;
 }
 
-// Accessibility Improvements
 [hidden] {
     display: none !important;
-}
-
-// Focus styles for interactive elements
-// :focus {
-//     outline: 1px solid $color-info;
-//     outline-offset: 2px;
-// }
-
-// Validation Colors
-input.is-valid,
-textarea.is-valid {
-    border-color: $color-success;
-}
-
-input.is-invalid,
-textarea.is-invalid {
-    border-color: $color-danger;
-
-    &:focus {
-        outline: 2px solid $color-danger;
-    }
-}
-
-// Placeholder Styling
-::placeholder {
-    color: $color-neutral-300;
-    opacity: 1;
 }
