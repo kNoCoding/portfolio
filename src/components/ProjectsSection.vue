@@ -48,9 +48,47 @@ export default {
 
 </script>
 
-<style scoped>
-ul {
-    list-style-type: none;
-    padding: 0;
+<style lang="scss" scoped>
+.project-section {
+    text-align: center;
+    padding: 2rem 0;
+
+    h2 {
+        font-size: $font-size-h2;
+        color: $color-primary;
+    }
+
+    .projects-list {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .project-item {
+        background-color: $color-neutral-100;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        h3 {
+            font-size: $font-size-h3;
+            color: $color-text;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: $font-size-base;
+            color: $color-text;
+            margin-bottom: 1rem;
+        }
+
+        button {
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-size: $font-size-base;
+        }
+    }
 }
 </style>

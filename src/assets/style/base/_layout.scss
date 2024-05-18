@@ -1,42 +1,38 @@
-// Main Layout Structure
 .main-layout {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-// Internal Container to Control Content Width
 .container {
   display: flex;
   flex-direction: column;
-  gap:calc($gutter-width*5);
-  margin: calc($gutter-width*5) 0;
-
+  gap: $gutter-width;
+  margin: $gutter-width 0;
   width: 100%;
   max-width: $container-width;
   padding: 0 calc($gutter-width / 2);
   align-self: center;
 
   @include tablet {
-    padding: 0 $gutter-width;
+      padding: 0 $gutter-width;
   }
 }
 
-// Responsive settings
 @include mobile {
   .main-layout {
-    padding: calc($spacing-unit / 2);
+      padding: calc($spacing-unit / 2);
   }
 }
 
 @include tablet {
   .main-layout {
-    padding: $spacing-unit;
+      padding: $spacing-unit;
   }
 }
 
 @include desktop {
   .main-layout {
-    padding: calc($spacing-unit * 1.5);
+      padding: calc($spacing-unit * 1.5);
   }
 }
