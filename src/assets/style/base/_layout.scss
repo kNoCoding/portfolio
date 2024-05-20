@@ -21,18 +21,19 @@
 
 @include mobile {
   .main-layout {
-      padding: calc($spacing-unit / 2);
+      border: solid calc($spacing-unit) $color-outline;
   }
 }
 
 @include tablet {
   .main-layout {
-      padding: $spacing-unit;
+      border: solid calc($spacing-unit*2) $color-outline;
+
   }
 }
 
 @include desktop {
   .main-layout {
-      padding: calc($spacing-unit * 1.5);
+      border: solid calc($spacing-unit*5) $color-outline;
   }
 }
