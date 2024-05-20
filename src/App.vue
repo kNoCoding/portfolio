@@ -1,15 +1,15 @@
 <template>
   <div class="main-layout">
-  <AppHeader />
-  <main class="container">
-    <HeroSection />
-    <AboutSection />
-    <ProjectsSection />
-    <ResumeSection />
-    <ContactSection />
-  </main>
-  <AppFooter />
-</div>
+    <AppHeader />
+    <main class="container">
+      <HeroSection />
+      <AboutSection />
+      <ProjectsSection />
+      <ResumeSection />
+      <ContactSection />
+    </main>
+    <AppFooter />
+  </div>
 </template>
 
 <script>
@@ -35,5 +35,4 @@ export default {
 }
 </script>
 
-<style>
-</style>
+<style></style>

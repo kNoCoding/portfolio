@@ -2,38 +2,42 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+
+  box-shadow:
+    inset -10px -10px 20px rgba(255, 255, 255, 0.25),
+    inset 10px 10px 20px rgba(0, 0, 0, 0.25);
+
+  // border: 1px solid $color-outline;
+  border-radius: calc($spacing-unit);
+
+
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  gap: $gutter-width;
-  margin: $gutter-width 0;
-  width: 100%;
+  // width: 100%;
   max-width: $container-width;
-  padding: 0 calc($gutter-width / 2);
   align-self: center;
-
-  @include tablet {
-      padding: 0 $gutter-width;
-  }
 }
 
 @include mobile {
   .main-layout {
-      border: solid calc($spacing-unit) $color-outline;
+    padding: calc($spacing-unit);
+    margin: calc($spacing-unit);
   }
 }
 
 @include tablet {
   .main-layout {
-      border: solid calc($spacing-unit*2) $color-outline;
-
+    padding: calc($spacing-unit*2);
+    margin: calc($spacing-unit*2);
   }
 }
 
 @include desktop {
   .main-layout {
-      border: solid calc($spacing-unit*5) $color-outline;
+    padding: calc($spacing-unit*5);
+    margin: calc($spacing-unit*5);
   }
 }

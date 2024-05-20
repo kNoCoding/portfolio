@@ -23,6 +23,9 @@
 
 <style lang="scss">
 .app-header {
+
+    overflow: auto; // this is to be removed
+
     position: sticky;
     top: 0;
     z-index: 1000;
