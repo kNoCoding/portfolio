@@ -8,9 +8,6 @@
 
 </script>
 
-<style scoped>
-.app-footer {
-    background-color: #d3dcff;
-    text-align: center;
-}
+<style>
+
 </style>
