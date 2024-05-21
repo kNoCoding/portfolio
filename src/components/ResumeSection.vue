@@ -77,27 +77,5 @@
 </script>
 
 <style lang="scss">
-.resume-section {
-    justify-content: center;
 
-    flex-direction: column;
-    text-align: center;
-
-    .info-container {
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: calc($spacing-unit*2);
-
-        .professional-experience {
-            grid-row: 1 / 3;
-            grid-column: 2 / 3;
-        }
-    }
-}
-
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
 </style>

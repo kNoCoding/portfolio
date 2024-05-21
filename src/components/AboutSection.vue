@@ -29,19 +29,5 @@
 </script>
 
 <style lang="scss">
-.about-section {
-    text-align: center;
-    margin: 2rem 0;
 
-    h2 {
-        font-size: $font-size-h2;
-        color: $color-primary;
-    }
-
-    p {
-        font-size: $font-size-base;
-        color: $color-text;
-        margin: 1rem 0;
-    }
-}
 </style>

@@ -13,16 +13,22 @@ html {
 
 body {
     line-height: 1.5;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-weight: $font-weight-normal;
     color: $color-text;
-    background-color: $color-background;
+    background-color: red;
+    // background-color: $color-background;
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: $font-weight-bold;
     color: $color-text;
 }
@@ -34,37 +40,43 @@ ol[role='list'] {
 
 a {
     text-decoration: none;
-    color: $color-primary;
+    color: $color-text;
 
-    &:hover, &:focus {
-        color: darken($color-primary, 20%);
+    &:hover,
+    &:focus {
+        color: darken($color-text, 20%);
         text-decoration: underline;
     }
 
     &:active {
-        color: lighten($color-primary, 10%);
+        color: lighten($color-text, 10%);
     }
 }
 
-img, svg, video {
+img,
+svg,
+video {
     max-width: 100%;
     height: auto;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
     font: inherit;
     color: inherit;
     padding: $spacing-unit;
-    border: 1px solid $color-neutral-300;
+    border: 1px solid $color-outline;
     border-radius: 4px;
 
     &:focus {
         outline: none;
-        box-shadow: 0 0 0 1px $color-primary;
+        box-shadow: 0 0 0 1px $color-text;
     }
 
     &.error {
-        border-color: $color-danger;
+        border-color: red;
     }
 }
 
@@ -73,15 +85,14 @@ button,
 [type='reset'],
 [type='submit'],
 a.button {
-    background-color: $color-primary;
-    color: $color-neutral-100;
     border: none;
     cursor: pointer;
     padding: 10px 20px;
     border-radius: 5px;
 
-    &:hover, &:focus {
-        background-color: darken($color-primary, 10%);
+    &:hover,
+    &:focus {
+        background-color: darken($color-text, 10%);
     }
 }
 
@@ -90,12 +101,15 @@ table {
     border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
     text-align: left;
     padding: $spacing-unit;
 }
 
-iframe, embed, object {
+iframe,
+embed,
+object {
     max-width: 100%;
 }
 
