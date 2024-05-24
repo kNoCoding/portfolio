@@ -50,4 +50,8 @@ export default {
 
 <style lang="scss">
 
+.project-section{
+    padding: calc($spacing-unit*2) calc($spacing-unit*4);
+}
+
 </style>

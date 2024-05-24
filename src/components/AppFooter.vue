@@ -8,6 +8,10 @@
 
 </script>
 
-<style>
+<style lang="scss">
+
+.app-footer{
+    padding: calc($spacing-unit*4) calc($spacing-unit*4);
+}
 
 </style>

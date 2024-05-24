@@ -29,5 +29,7 @@
 </script>
 
 <style lang="scss">
-
+.about-section{
+    padding: calc($spacing-unit*2) calc($spacing-unit*4);
+}
 </style>

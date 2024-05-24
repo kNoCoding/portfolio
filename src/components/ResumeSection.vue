@@ -1,5 +1,5 @@
 <template>
-    <div class="resume-section d-flex" id="resume">
+    <div class="resume-section" id="resume">
 
         <h2>Resume Highlights</h2>
 
@@ -78,4 +78,7 @@
 
 <style lang="scss">
 
+.resume-section{
+    padding: calc($spacing-unit*2) calc($spacing-unit*4);
+}
 </style>
