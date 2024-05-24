@@ -10,7 +10,10 @@
         </ul>
 
 
-        <button @click="toggleMobileNav" v-show="mobile" :class="{ 'mobile-menu-active': mobileNav }">Menu</button>
+        <button @click="toggleMobileNav" v-show="mobile" class="mobile-nav-button"
+            :class="{ 'mobile-menu-active': mobileNav }">
+            <img :src="menuIcon" alt="Menu" />
+        </button>
 
         <transition name="mobile-nav">
             <ul v-if="mobileNav" class="dropdown-nav">
@@ -22,15 +25,17 @@
         </transition>
 
 
-
     </header>
 
 </template>
 
 <script>
+import menuIcon from '@/assets/style/images/menu-icon.svg';
+
 export default {
     data() {
         return {
+            menuIcon,
             mobile: null,
             mobileNav: null,
             windowWidth: null,
@@ -116,7 +121,6 @@ export default {
         list-style: none;
         padding: calc($spacing-unit*3);
 
-
         a {
             color: black;
         }
@@ -135,14 +139,21 @@ export default {
     .mobile-nav-enter-to {
         transform: translateX(0);
     }
+}
 
-
+.mobile-nav-button,
+.mobile-nav-button:hover,
+.mobile-nav-button:focus,
+.mobile-nav-button:active {
+    padding: 8px 12px;
+    border-radius: 2rem;
+    box-shadow:none;
+    background-color: $color-accent;
 }
 
 @include mobile {
     .app-header {
         padding: calc($spacing-unit*2) calc($spacing-unit*4);
     }
-
 }
 </style>
