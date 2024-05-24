@@ -35,13 +35,19 @@
             a {
                 padding: $spacing-unit calc($spacing-unit*2);
                 background-color: $color-background;
-                // TODO: fix drop shadow on these buttons
-                box-shadow:
-                    -4px -4px 4px rgba(255, 255, 255, 0.15),
-                    5px 5px 10px rgba(0, 0, 0, 0.25);
+
+                // from figma
                 // box-shadow:
-                //     -4px -4px 4px rgba(255, 255, 255, 0.25),
-                //     0px 4px 4px rgba(0, 0, 0, 0.25);
+                //     0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+                //     -5px -5px 10px 0px rgba(255, 255, 255, 0.25),
+                //     5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+
+                // my take
+                box-shadow:
+                    //  inset|| offset-x | offset-y | blur-radius | spread-radius || color
+                    1px 3px 2px 2px rgba(0, 0, 0, 0.25),
+                    -3px -2px 4px -1px rgba(255, 255, 255, 0.25),
+                    5px 5px 10px 0px rgba(0, 0, 0, 0.25);
 
                 border-radius: 50px;
             }
