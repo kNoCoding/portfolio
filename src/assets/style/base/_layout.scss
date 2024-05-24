@@ -24,6 +24,10 @@
     padding: calc($spacing-unit);
     margin: calc($spacing-unit);
   }
+
+  .container{
+    padding: 0;
+  }
 }
 
 @include tablet {
