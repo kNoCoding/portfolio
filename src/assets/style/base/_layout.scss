@@ -15,7 +15,7 @@
 
 .container {
   max-width: $container-width;
-  padding: calc($gutter-width*2);
+  padding: calc($gutter-width) 0;
   align-self: center;
 }
 
@@ -26,7 +26,7 @@
   }
 
   .container{
-    padding: 0;
+    padding: calc($spacing-unit*2) calc($spacing-unit*4);
   }
 }
 
