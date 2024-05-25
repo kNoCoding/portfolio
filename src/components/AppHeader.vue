@@ -11,12 +11,12 @@
 
 
         <button @click="toggleMobileNav" v-show="mobile" class="mobile-nav-button"
-            :class="{ 'mobile-menu-active': mobileNav }">
+            :class="{ 'mobile-menu-active': mobileNav }" ref="menuButton">
             <img :src="menuIcon" alt="Menu" />
         </button>
 
         <transition name="mobile-nav">
-            <ul v-if="mobileNav" class="dropdown-nav">
+            <ul v-if="mobileNav" class="dropdown-nav" ref="dropdownNav">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#resume">Resume</a></li>
@@ -45,6 +45,12 @@ export default {
         window.addEventListener("resize", this.checkScreen)
         this.checkScreen()
     },
+    mounted(){
+        document.addEventListener("click", this.handleClickOutside)
+    },
+    beforeUnmount(){
+        document.removeEventListener("click", this.handleClickOutside)
+    },
     methods: {
         toggleMobileNav() {
             this.mobileNav = !this.mobileNav
@@ -58,7 +64,15 @@ export default {
             this.mobile = false
             this.mobileNav = false
             return
-        }
+        },
+        handleClickOutside(event) {
+            const menuButton = this.$refs.menuButton
+            const dropdownNav = this.$refs.dropdownNav
+
+            if (menuButton && !menuButton.contains(event.target) && dropdownNav && !dropdownNav.contains(event.target)) {
+                this.mobileNav = false
+            }
+        },
     },
 }
 </script>
@@ -147,7 +161,7 @@ export default {
 .mobile-nav-button:active {
     padding: 8px 12px;
     border-radius: 2rem;
-    box-shadow:none;
+    box-shadow: none;
     background-color: $color-accent;
 }
 
