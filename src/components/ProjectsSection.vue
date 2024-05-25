@@ -5,8 +5,8 @@
             <li class="project-item" v-for="project in projects" :key="project.id">
                 <h3>{{ project.name }}</h3>
                 <p>{{ project.description }}</p>
-                <a :href="project.liveAppUrl" target="_blank"><button>View App</button></a>
-                <a :href="project.codeOnGithubUrl" target="_blank"><button>View Code</button></a>
+                <a :href="project.liveAppUrl" target="_blank">View App</a>
+                <a :href="project.codeOnGithubUrl" target="_blank">View Code</a>
             </li>
         </ul>
     </div>
@@ -49,9 +49,7 @@ export default {
 </script>
 
 <style lang="scss">
-
-.project-section{
+.project-section {
     padding: calc($spacing-unit*2) calc($spacing-unit*4);
 }
-
 </style>

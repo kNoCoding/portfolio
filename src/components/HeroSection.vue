@@ -7,7 +7,7 @@
             <p>Exploring the web since 2004 and evolving into a tech innovator. I blend full-stack development with
                 digital
                 marketing and automation to craft dynamic solutions that propel business growth.</p>
-            <button>View My Work</button>
+            <a href="#projects">View My Work</a>
         </div>
         <img src="https://robohash.org/85.64.203.44.png" alt="">
     </div>
@@ -18,8 +18,7 @@
 </script>
 
 <style lang="scss">
-
-.hero-section{
-        padding: calc($spacing-unit*2) calc($spacing-unit*4);
+.hero-section {
+    padding: calc($spacing-unit*2) calc($spacing-unit*4);
 }
 </style>
