@@ -51,5 +51,20 @@ export default {
 <style lang="scss">
 .project-section {
     padding: calc($spacing-unit*2) calc($spacing-unit*4);
+
+    h2 {
+        position: relative;
+        padding-bottom: 0.5rem;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 2px;
+            background: linear-gradient(to right, #8a2be2 70%, #ffa500 30%);
+        }
+    }
 }
 </style>
