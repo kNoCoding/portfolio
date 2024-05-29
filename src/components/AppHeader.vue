@@ -45,10 +45,10 @@ export default {
         window.addEventListener("resize", this.checkScreen)
         this.checkScreen()
     },
-    mounted(){
+    mounted() {
         document.addEventListener("click", this.handleClickOutside)
     },
-    beforeUnmount(){
+    beforeUnmount() {
         document.removeEventListener("click", this.handleClickOutside)
     },
     methods: {
@@ -165,9 +165,20 @@ export default {
     background-color: $color-accent;
 }
 
+// @include tablet {
+//     .app-header {}
+// }
+
 @include mobile {
     .app-header {
         padding: calc($spacing-unit*2) calc($spacing-unit*4);
+    }
+}
+
+@include mobile-small {
+    .app-header {
+        padding: calc($spacing-unit*2) calc($spacing-unit*2);
+        gap: 0;
     }
 }
 </style>

@@ -1,19 +1,20 @@
 // Media Query Mixins
-// @mixin mobile-small {
-//     @media (max-width: $breakpoint-mobile-small) { //320px
-//         @content;
-//     }
-// }
+@mixin mobile-small {
+    @media (max-width: $breakpoint-mobile-small) {
+        //320px
+        @content;
+    }
+}
 
 @mixin mobile {
-    @media (max-width: $breakpoint-mobile) {
-        //576px
+    @media (min-width: $breakpoint-mobile-small) and (max-width: $breakpoint-mobile) {
+        //425px
         @content;
     }
 }
 
 @mixin tablet {
-    @media (min-width: calc($breakpoint-mobile + 1px)) and (max-width:$breakpoint-desktop ) {
+    @media (min-width: calc($breakpoint-mobile)) and (max-width:$breakpoint-desktop ) {
         //768px
         @content;
     }
@@ -21,14 +22,14 @@
 
 @mixin desktop {
     @media (min-width: $breakpoint-desktop) {
-        //992px
+        //1024px
         @content;
     }
 }
 
 @mixin desktop-large {
     @media (min-width: $breakpoint-desktop-large) {
-        //1200px
+        //1440px
         @content;
     }
 }
