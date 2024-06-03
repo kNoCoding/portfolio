@@ -7,8 +7,8 @@
             digital
             marketing and automation to craft dynamic solutions that propel business growth.</p>
         <div class="hero-buttons">
-            <a href="#projects">View My Work</a>
-            <a href="#contact">Contact Me</a>
+            <a href="#projects">My Work</a>
+            <a href="#contact">Contact</a>
         </div>
     </div>
 </template>

@@ -38,6 +38,7 @@
 <style lang="scss">
 .about-section {
     padding: calc($spacing-unit*2) calc($spacing-unit*4);
+    margin: $gutter-width 0;
     display: flex;
 
     .text-part{
